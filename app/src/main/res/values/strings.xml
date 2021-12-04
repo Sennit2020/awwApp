@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">awwApp</string>
+    <string name="posted_by_u">Posted by u/</string>
+    <string name="play_button_image">play button image</string>
+    <string name="post_image">post Image</string>
+    <string name="comments">Comments</string>
+    <string name="award">award</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">search....</string>
+</resources>

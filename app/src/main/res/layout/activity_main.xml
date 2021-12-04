@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ui.MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/search"
+        android:layout_margin="@dimen/medium_margin"
+        android:padding="@dimen/medium_padding"/>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_marginHorizontal="@dimen/medium_margin"
+        android:layout_width="match_parent"
+        android:text="Search"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <ProgressBar
+        android:id="@+id/loadingIndicators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_gravity="center_horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="5"
+        tools:listitem="@layout/post_list_items" />
+
+</LinearLayout>
